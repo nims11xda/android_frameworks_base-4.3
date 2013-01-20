@@ -1871,6 +1871,10 @@
   <java-symbol type="string" name="reboot_system" />
   <java-symbol type="string" name="reboot_safe_mode" />
   <java-symbol type="string" name="reboot_progress" />
+  <java-symbol type="bool" name="config_forceDisableHardwareKeyboard" />
+  <java-symbol type="integer" name="config_wallpaperMaxWidth" />
+  <java-symbol type="string" name="config_legacyUmsLunFile" />
+  <java-symbol type="bool" name="config_noDelayInATwoDP" />
 
   <!-- From notification light mapping -->
   <java-symbol type="array" name="notification_light_package_mapping" />
