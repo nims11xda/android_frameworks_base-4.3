@@ -1236,7 +1236,4 @@
     <!-- True if the Irda service should be started at system start -->
     <bool name="config_enableIrdaManagerService">false</bool>
 
-    <!-- If true, adds support for no delay A2DP in Samsung devices -->
-    <bool name="config_noDelayInATwoDP">false</bool>
-
 </resources>
