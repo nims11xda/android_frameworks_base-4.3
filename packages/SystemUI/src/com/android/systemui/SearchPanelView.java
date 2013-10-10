@@ -320,11 +320,6 @@ public class SearchPanelView extends FrameLayout implements
         return transitioner;
     }
 
-    public boolean isAssistantAvailable() {
-        return ((SearchManager) mContext.getSystemService(Context.SEARCH_SERVICE))
-                .getAssistIntent(mContext, false, UserHandle.USER_CURRENT) != null;
-    }
-
     private boolean isScreenLarge() {
         final Configuration configuration = mContext.getResources().getConfiguration();
         final int screenSize = configuration.screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK;
