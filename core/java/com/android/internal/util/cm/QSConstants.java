@@ -28,6 +28,8 @@ public class QSConstants {
         public static final String TILE_DESKTOPMODE = "toggleDesktopMode";
         public static final String TILE_VOLUME = "toggleVolume";
         public static final String TILE_HYBRID = "toggleHybrid";
+        public static final String TILE_SCREENSHOT = "toggleScreenShot";
+        public static final String TILE_HALO = "toggleHalo";
 
         public static final String TILE_DELIMITER = "|";
         public static ArrayList<String> TILES_DEFAULT = new ArrayList<String>();

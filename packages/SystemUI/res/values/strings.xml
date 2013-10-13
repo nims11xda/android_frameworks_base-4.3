@@ -21,6 +21,15 @@
     <!-- Name of the status bar as seen in the applications info settings page. [CHAR LIMIT=12] -->
     <string name="app_label">System UI</string>
 
+<<<<<<< HEAD
+=======
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_screenshot">Capture screenshot</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_screenshot">Allows the app to cature a screenshot. This is protected by SystemUI.</string>
+    <string name="screenshot_toast">Screenshot in %1$d seconds</string>
+
+>>>>>>> f5cdb68... Port forward: HALO, Screenshot tile
     <!-- The text for the button in the notification window-shade that clears
          all of the currently visible notifications. [CHAR LIMIT=10]-->
     <string name="status_bar_clear_all_button">Clear</string>
@@ -524,4 +533,136 @@
     <!-- [CHAR LIMIT=10] Running services, summary of foreground processes -->
     <string name="service_used_mem"><xliff:g id="memory">%1$s</xliff:g> used</string>
 
+<<<<<<< HEAD
+=======
+    <!-- Quick Settings -->
+    <string name="quick_settings_gps">GPS</string>
+    <string name="quick_settings_gps_off">GPS off</string>
+    <string name="quick_settings_screen_sleep">Go to sleep</string>
+    <string name="quick_settings_ringer_on">Sound on</string>
+    <string name="quick_settings_ringer_off">Sound off</string>
+    <string name="quick_settings_vibration_on">Vibration on</string>
+    <string name="quick_settings_vibration_off">Vibration off</string>
+    <string name="quick_settings_label_enabled">On</string>
+    <string name="quick_settings_label_disabled">Off</string>
+    <string name="quick_settings_ringer_normal">Sound</string>
+    <string name="quick_settings_lockscreen">Lock screen</string>
+    <string name="quick_settings_network_type">Network mode</string>
+    <string name="quick_settings_report_bug">Report bug</string>
+    <string name="quick_settings_sync">Sync</string>
+    <string name="quick_settings_sync_off">Sync off</string>
+    <string name="quick_settings_torch">Torch</string>
+    <string name="quick_settings_torch_off">Torch off</string>
+    <string name="quick_settings_nfc">NFC</string>
+    <string name="quick_settings_nfc_off">NFC off</string>
+    <string name="quick_settings_fcharge">Fast charge</string>
+    <string name="quick_settings_screen_timeout">Timeout</string>
+    <string name="quick_settings_screen_timeout_summary" translatable="false">%1$d %2$s</string>
+    <string name="quick_settings_screen_timeout_summary_never">Never</string>
+    <string name="quick_settings_usb_tether_off_label">Disconnected</string>
+    <string name="quick_settings_usb_tether_connected_label">Tethering off</string>
+    <string name="quick_settings_usb_tether_on_label">Tethering</string>
+    <string name="quick_settings_wifiap">Wi-Fi AP</string>
+    <string name="quick_settings_wifiap_off">Wi-Fi AP off</string>
+    <string name="quick_settings_quiethours">Quiet hours</string>
+    <string name="quick_settings_quiethours_off">Quiet hours off</string>
+    <string name="quick_settings_lte">LTE</string>
+    <string name="quick_settings_lte_off">LTE off</string>
+    <string name="quick_settings_volume">Volume</string>
+    <string name="quick_settings_camera_label">Camera</string>
+    <string name="quick_settings_carbon_label">Carbon Settings</string>
+    <string name="quick_settings_powermenu_label">Power Menu</string>
+    <string name="quick_settings_network_adb_disabled_label">Disabled</string>
+    <string name="quick_settings_network_adb_enabled_label">Enabled</string>
+    <string name="quick_settings_trds_label">Dark Carbon</string>
+    <string name="quick_settings_trds_on_label">Dark Carbon On</string>
+    <string name="quick_settings_trds_off_label">Dark Carbon Off</string>
+    <string name="quick_settings_music_play">Play</string>
+    <string name="quick_settings_music_pause">Pause</string>
+    <string name="quick_settings_screenshot_label">Screenshot</string>
+
+    <!-- HALO tile -->
+    <string name="quick_settings_disabled">Disabled</string>
+    <string name="quick_settings_enabled">Enabled</string>
+
+    <!-- Camera tile toasts -->
+    <string name="quick_settings_camera_error_connect">Can\'t connect to camera</string>
+
+    <!-- Expanded desktop strings break the rules a bit - the icon identifies the feature, the string indicates current state -->
+    <string name="quick_settings_expanded_desktop">Expanded</string>
+    <string name="quick_settings_expanded_desktop_off">Normal</string>
+
+    <!-- QuickSettings: Profile [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_profile_label">Profile</string>
+
+    <!-- Text to display next to the minimal graphical battery meter.  [CHAR LIMIT=3] -->
+    <string name="status_bar_settings_battery_meter_min_format" translatable="false">
+        <xliff:g id="number">%d</xliff:g>
+    </string>
+
+    <!-- Notification drawer toasts -->
+    <string name="calendar_error_alert">No Calendar app installed.</string>
+    <string name="clock_error_alert">No DeskClock app installed.</string>
+
+    <!--  App window Strings -->
+    <string name="close">Close</string>
+    <string name="app_window">Applications</string>
+    <string name="toggles">Toggles</string>
+    <string name="ribbon">Ribbon</string>
+
+    <!--  Target/Action Strings -->
+    <string name="shortcut_label">AOKP Actions</string>
+    <string name="action_home">Home</string>
+    <string name="action_back">Back</string>
+    <string name="action_recents">Recents</string>
+    <string name="action_screenshot">Screenshot</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_ime">Open IME Switcher</string>
+    <string name="action_kill">Kill task</string>
+    <string name="action_power">Power</string>
+    <string name="action_search">Search</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="action_quicksettings">Quick Settings</string>
+    <string name="action_lastapp">Last App</string>
+    <string name="action_none">Empty</string>
+
+    <string name="widgets">Widgets</string>
+    <string name="toggle_navbar">NavBar - Toggle</string>
+    <string name="toggle_statusbar">StatusBar - Toggle</string>
+    <string name="toggle_widgets">Widgets - Toggle</string>
+    <string name="toggle_ring_vib">Ring/Vib - Toggle</string>
+    <string name="toggle_ring_silent">Ring/Silent - Togle</string>
+    <string name="toggle_ring_vib_silent">Ring/Vib/Silent - Toggle</string>
+    <string name="app_killed_message">App Killed</string>
+
+    <!-- Halo -->
+    <string name="halo_dismiss">Dismiss notification</string>
+    <string name="halo_hide">Hide</string>
+    <string name="halo_clear_all">Dismiss all notifications</string>
+    <string name="halo_silence">Hide &amp; silence until woken</string>
+    <string name="halo_tutorial1">This is HALO</string>
+    <string name="halo_tutorial2">Move me: 2x-tap &amp; drag</string>
+    <string name="halo_tutorial3">Browse tasks: Horizontal drag</string>
+    <string name="halo_battery_plugged">CHARGING</string>
+    <string name="halo_battery_unplugged">REMAINING</string>
+    <string name="halo_battery_full">FULL</string>
+    <string name="halo_aeroplane1">AEROPLANE</string>
+    <string name="halo_aeroplane2">MODE</string>
+    <string name="halo_wifi_on">WI-FI ON</string>
+    <string name="halo_wifi_off">WI-FI OFF</string>
+    <string name="halo_signal_bars_4">FULL</string>
+    <string name="halo_signal_bars_3">THREE BARS</string>
+    <string name="halo_signal_bars_2">TWO BARS</string>
+    <string name="halo_signal_bars_1">ONE BAR</string>
+    <string name="halo_signal_bars_none">NO BARS</string>
+
+    <string name="pie_date_format">ccc, dd MMM yyyy</string>
+    <string name="pie_hour_format_12">hh:mm</string>
+    <string name="pie_hour_format_24">HH:mm</string>
+    <string name="pie_am_pm">a</string>
+
+    <!-- Label in drop down to identify brightness slider -->
+    <string name="brightness_label">Brightness</string>
+
+>>>>>>> f5cdb68... Port forward: HALO, Screenshot tile
 </resources>
