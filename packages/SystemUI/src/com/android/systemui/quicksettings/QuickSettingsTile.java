@@ -144,6 +144,7 @@ public class QuickSettingsTile implements OnClickListener {
 
     @Override
     public final void onClick(View v) {
+        if(isFlipTilesEnabled()) flipTile(0);
         mOnClick.onClick(v);
         ContentResolver resolver = mContext.getContentResolver();
         boolean shouldCollapse = Settings.System.getInt(resolver, Settings.System.QS_COLLAPSE_PANEL, 0) == 1;
