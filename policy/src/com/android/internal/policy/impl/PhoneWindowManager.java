@@ -3903,7 +3903,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                 } else {
                     if (DEBUG_LAYOUT) Log.v(TAG, "** SHOWING status bar: top is not fullscreen");
                     if (mStatusBar.showLw(true)) {
-                    	if (!forceStatusBar) changes |= FINISH_LAYOUT_REDO_LAYOUT;
+                    	changes |= FINISH_LAYOUT_REDO_LAYOUT;
                     	if(mQuickPeekMode == 1 && !forceStatusBar){
                     		mHandler.sendEmptyMessage(MSG_DISABLE_QUICK_PEEK);
                     	}
