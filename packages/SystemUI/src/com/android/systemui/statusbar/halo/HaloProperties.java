@@ -378,7 +378,6 @@ public class HaloProperties extends FrameLayout {
             	if (mNotificationIcon != null){
             		d = mNotificationIcon;
             		overlayAlpha = 1;
-            		Log.e("Halo", "Set notification Icon!");
             	}
             	break;
         }
