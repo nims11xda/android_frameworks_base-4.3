@@ -4996,7 +4996,7 @@ public class WindowManagerService extends IWindowManager.Stub
     public void shutdown(boolean confirm) {
         ShutdownThread.shutdown(getUiContext(), confirm);
     }
-
+    
     // Called by window manager policy.  Not exposed externally.
     @Override
     public void rebootSafeMode(boolean confirm) {

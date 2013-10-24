@@ -41,6 +41,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_WIFI;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.cm.QSConstants.TILE_DESKTOPMODE;
 import static com.android.internal.util.cm.QSConstants.TILE_HYBRID;
+import static com.android.internal.util.cm.QSConstants.TILE_POWER;
 import static com.android.internal.util.cm.QSUtils.deviceSupportsBluetooth;
 import static com.android.internal.util.cm.QSUtils.deviceSupportsMobileData;
 import static com.android.internal.util.cm.QSUtils.deviceSupportsUsbTether;
@@ -91,6 +92,7 @@ import com.android.systemui.quicksettings.WifiAPTile;
 import com.android.systemui.quicksettings.DesktopModeTile;
 import com.android.systemui.quicksettings.HybridTile;
 import com.android.systemui.quicksettings.HaloTile;
+import com.android.systemui.quicksettings.PowerMenuTile;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -211,6 +213,8 @@ public class QuickSettingsController {
                 qs = new LteTile(mContext, this);
             } else if (tile.equals(TILE_HALO)) {
                 qs = new HaloTile(mContext, this, mHandler);
+            } else if (tile.equals(TILE_POWER)) {
+            	qs = new PowerMenuTile(mContext, this);
             }
             if (qs != null) {
                 qs.setupQuickSettingsTile(inflater, mContainerView);
