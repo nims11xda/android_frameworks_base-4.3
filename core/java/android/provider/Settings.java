@@ -2782,6 +2782,12 @@ public final class Settings {
          * @hide
          */
         public static final String STATUS_BAR_TRAFFIC_USE_ICON_COLOR = "status_bar_traffic_use_icon_color";
+   
+        /**
+         * HALO enabled, should default to 0 (HALO is disabled)
+         * @hide
+         */
+        public static final String HALO_ENABLED = "halo_enabled";
 
         /**
          * HALO, should default to 0 (no, do not show)

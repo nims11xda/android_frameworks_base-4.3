@@ -45,7 +45,6 @@ import static com.android.internal.util.cm.QSUtils.deviceSupportsBluetooth;
 import static com.android.internal.util.cm.QSUtils.deviceSupportsMobileData;
 import static com.android.internal.util.cm.QSUtils.deviceSupportsUsbTether;
 import static com.android.internal.util.cm.QSUtils.deviceSupportsLte;
-import static com.android.internal.util.cm.QSConstants.TILE_SCREENSHOT;
 import static com.android.internal.util.cm.QSConstants.TILE_HALO;
 
 import android.content.BroadcastReceiver;
@@ -89,17 +88,9 @@ import com.android.systemui.quicksettings.VolumeTile;
 import com.android.systemui.quicksettings.WiFiDisplayTile;
 import com.android.systemui.quicksettings.WiFiTile;
 import com.android.systemui.quicksettings.WifiAPTile;
-<<<<<<< HEAD
 import com.android.systemui.quicksettings.DesktopModeTile;
 import com.android.systemui.quicksettings.HybridTile;
-=======
-import com.android.systemui.quicksettings.ExpandedDesktopTile;
-import com.android.systemui.quicksettings.TRDSTile;
-import com.android.systemui.quicksettings.ScreenshotTile;
 import com.android.systemui.quicksettings.HaloTile;
-import com.android.systemui.statusbar.BaseStatusBar;
-import com.android.systemui.R;
->>>>>>> f5cdb68... Port forward: HALO, Screenshot tile
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -218,8 +209,6 @@ public class QuickSettingsController {
                 qs = new HybridTile(mContext, this, mHandler);
             } else if (tile.equals(TILE_LTE)) {
                 qs = new LteTile(mContext, this);
-            } else if (tile.equals(TILE_SCREENSHOT)) {
-                qs = new ScreenshotTile(mContext, this);
             } else if (tile.equals(TILE_HALO)) {
                 qs = new HaloTile(mContext, this, mHandler);
             }
