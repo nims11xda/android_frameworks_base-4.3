@@ -218,20 +218,10 @@ public class QuickSettingsController {
                 qs = new HybridTile(mContext, this, mHandler);
             } else if (tile.equals(TILE_LTE)) {
                 qs = new LteTile(mContext, this);
-<<<<<<< HEAD
-=======
-            } else if (tile.equals(TILE_QUIETHOURS)) {
-                qs = new QuietHoursTile(mContext, this);
-            } else if (tile.equals(TILE_NETWORKADB)) {
-                mTileStatusUris.add(Settings.Global.getUriFor(Settings.Global.ADB_ENABLED));
-                if (QSUtils.adbEnabled(resolver)) {
-                    qs = new NetworkAdbTile(mContext, this);
-                }
             } else if (tile.equals(TILE_SCREENSHOT)) {
                 qs = new ScreenshotTile(mContext, this);
             } else if (tile.equals(TILE_HALO)) {
                 qs = new HaloTile(mContext, this, mHandler);
->>>>>>> f5cdb68... Port forward: HALO, Screenshot tile
             }
             if (qs != null) {
                 qs.setupQuickSettingsTile(inflater, mContainerView);

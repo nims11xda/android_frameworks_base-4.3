@@ -3457,12 +3457,6 @@ public final class Settings {
         public static final String ENABLE_FAST_POWERON = "enable_fast_poweron";
         
 	/**
-         * @hide
-         * Whether FastPowerOn is enabled
-         */
-        public static final String VOLUME_KEYS_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
-
-	/**
          * Holds the text for the Carrier label. An empty string
          * will bring the default text back.
          * @hide
