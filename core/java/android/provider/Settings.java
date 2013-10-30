@@ -3435,7 +3435,6 @@ public final class Settings {
           */
          public static final String SWAP_VOLUME_KEYS_ON_ROTATION = "swap_volume_keys_on_rotation";
 
-
         /**
          * Control the display of the action overflow button within app UI.
          * 0 = use system default
@@ -3458,6 +3457,9 @@ public final class Settings {
         public static final String ENABLE_FAST_POWERON = "enable_fast_poweron";
         
 	/**
+         * @hide
+         * Whether FastPowerOn is enabled
+         */
         public static final String VOLUME_KEYS_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
 
 	/**
