@@ -1028,19 +1028,13 @@ public abstract class WallpaperService extends Service {
                     Engine engine = onCreateEngine();
                     mEngine = engine;
                     mActiveEngines.add(engine);
-                    synchronized (mActiveEngines) {
-                        mActiveEngines.add(engine);
-                    }
                     engine.attach(this);
                     return;
                 }
                 case DO_DETACH: {
                     mActiveEngines.remove(mEngine);
                     mEngine.detach();
-                        mEngine.detach();
-                    synchronized (mActiveEngines) {
-                        mActiveEngines.remove(mEngine);
-                    }
+                    return;
                 }
                 case DO_SET_DESIRED_SIZE: {
                     mEngine.doDesiredSizeChanged(message.arg1, message.arg2);
@@ -1121,17 +1115,8 @@ public abstract class WallpaperService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-<<<<<<< HEAD
         for (int i=0; i<mActiveEngines.size(); i++) {
             mActiveEngines.get(i).detach();
-=======
-        synchronized (mActiveEngines) {
-           for (int i=0; i<mActiveEngines.size(); i++) {
-                Engine engine = mActiveEngines.get(i);
-                engine.detach();
-           }
-           mActiveEngines.clear();
->>>>>>> c5abecf... Squash of 30 commits fixing bugs, deadlocks, memory leaks etc (Thanks to Team Gummy and BytecodeME)
         }
         mActiveEngines.clear();
     }
